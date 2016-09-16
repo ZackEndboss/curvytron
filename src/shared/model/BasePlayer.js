@@ -11,7 +11,7 @@ function BasePlayer(client, name, color, ready)
 
     this.client = client;
     this.name   = name;
-    this.color  = typeof(color) !== 'undefined' && this.validateColor(color) ? color : this.getRandomColor();
+    this.color  = typeof(color) !== 'undefined' && this.validateColor(color, true) ? color : this.getRandomColor();
     this.ready  = typeof(ready) !== 'undefined' && ready;
     this.id     = null;
     this.avatar = null;
